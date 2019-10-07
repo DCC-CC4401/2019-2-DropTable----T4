@@ -124,5 +124,10 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'user_registration.CustomUser'
 
 # Redirect links
+#LOGIN_REDIRECT_URL = 'home'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+# Use images in models
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
