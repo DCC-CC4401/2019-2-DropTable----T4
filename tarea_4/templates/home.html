@@ -6,11 +6,16 @@
 {% block content %}
 {% if user.is_authenticated %}
   Hola {{ user.first_name }} {{ user.last_name }}!<br>
-  <img src={{ user.profile_image }} >
-  <p><a href="{% url 'logout' %}">logout</a></p>
+  {{ user.get_username }}<br>
+  <img src={{ user.profile_image }}>
+  <p>
+      <a href="{% url 'logout' %}">logout</a> |
+      <a href="{% url 'change_password' %}">cambiar contraseña</a>
+  </p>
 {% else %}
   <p>You are not logged in</p>
   <a href="{% url 'login' %}">login</a> |
-  <a href="{% url 'signup' %}">signup</a>
+  <a href="{% url 'signup' %}">signup</a> 
+
 {% endif %}
 {% endblock %}
