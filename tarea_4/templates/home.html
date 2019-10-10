@@ -7,10 +7,20 @@
 {% if user.is_authenticated %}
   Hola {{ user.first_name }} {{ user.last_name }}!<br>
   {{ user.get_username }}<br>
-  <img src={{ user.profile_image }}>
+  <img src="./media/{{user.profile_image}}">
   <p>
       <a href="{% url 'logout' %}">logout</a> |
-      <a href="{% url 'change_password' %}">cambiar contraseña</a>
+      <a href="{% url 'change_password' %}">cambiar contraseña</a><br>
+      <form action="{% url 'upload_image' %}" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <p>{{ form.non_field_errors }}</p>
+          <p>{{ form.imagefile.label_tag }} {{ form.imagefile.help_text }}</p>
+          <p>
+              {{ form.imagefile }}
+          </p>
+          <p><input type="submit" value="Upload" /></p>
+      </form>
+      
   </p>
 {% else %}
   <p>You are not logged in</p>

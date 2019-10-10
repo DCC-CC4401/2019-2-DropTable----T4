@@ -15,3 +15,8 @@ class CustomUserChangeForm(UserChangeForm):
         model = CustomUser
         #fields = ('username', 'email')
         fields = ('email', 'first_name', 'last_name',)
+
+
+class UploadFileForm(forms.Form):
+    imagefile = forms.ImageField( label='Seleccionar una imagen:',
+                                  help_text='max. 2 megabytes' )
