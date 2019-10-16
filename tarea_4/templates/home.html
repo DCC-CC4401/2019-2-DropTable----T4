@@ -7,7 +7,7 @@
 {% if user.is_authenticated %}
   Hola {{ user.first_name }} {{ user.last_name }}!<br>
   {{ user.get_username }}<br>
-  <img src="./media/{{user.profile_image}}">
+  <img src="media/{{user.profile_image}}">
   <p>
       <a href="{% url 'logout' %}">logout</a> |
       <a href="{% url 'change_password' %}">cambiar contraseña</a><br>

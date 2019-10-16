@@ -24,8 +24,8 @@ from user_registration import views
 urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('admin/', admin.site.urls),
-    path('users/', include('user_registration.urls')),
-    path('users/', include('django.contrib.auth.urls')),
+    path('/', include('user_registration.urls')),
+    path('/', include('django.contrib.auth.urls')),
     url(r'^change-password/$', views.change_password, name='change_password'),
 ]
 
