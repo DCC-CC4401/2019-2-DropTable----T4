@@ -11,7 +11,8 @@
 </head>
 
 <body>
-
+    
+{% if user.is_authenticated %}
 <div class="wrapper">
 
     <!--SIDEBAR-->
@@ -20,8 +21,9 @@
             <h1>LOGO</h1>
         </div>
         <div class="text-center py-3">
-            <img src="/static/img/turing.jpg" class="avatar px-2 py-2">
-            <p class="h6">Bienvenido, <br> Nombre de usuario</p>
+	    <img src="../media/{{user.profile_image}}" class="avatar px-2 py-2">
+            <!-- <img src="/static/img/turing.jpg" class="avatar px-2 py-2"> -->
+            <p class="h6">Bienvenido, <br> {{ user.first_name }}</p>
         </div>
         <ul class="list-unstyled components text-left">
             <li>
@@ -58,7 +60,7 @@
     <!--CONTENIDO PAGINA-->
     <div class="container-fluid p-4 main">
         <div class="row">
-            <img src="/static/img/turing.jpg" class="circular mx-auto d-block shadow" height="250px">
+            <img src="../media/{{user.profile_image}}" class="circular mx-auto d-block shadow" height="250px">
         </div>
         <div class="row py-4">
             <div class="col text-center">
@@ -106,16 +108,16 @@
                             <div class="form-group">
                                 <label for="disabledTextInput">Nombre:</label>
                                 <input type="text" id="disabledTextInputNombre" class="form-control"
-                                       placeholder="Nombre usuario">
+                                       placeholder={{ user.first_name }}>
                             </div>
                         </fieldset>
 
                         <!--Apellidos-->
                         <fieldset disabled>
                             <div class="form-group">
-                                <label for="disabledTextInput">Apellidos:</label>
+                                <label for="disabledTextInput">Apellido:</label>
                                 <input type="text" id="disabledTextInputApellidos" class="form-control"
-                                       placeholder="Apellidos usuario">
+                                       placeholder={{ user.last_name }}>
                             </div>
                         </fieldset>
 
@@ -124,7 +126,7 @@
                             <div class="form-group">
                                 <label for="disabledTextInput">Correo electronico:</label>
                                 <input type="text" id="disabledTextInput" class="form-control"
-                                       placeholder="correo@usuario.com">
+                                       placeholder={{ user.email }}>
                             </div>
                         </fieldset>
 
@@ -370,6 +372,8 @@
         crossorigin="anonymous"></script>
 <script src="/static/js/bootstrap.min.js"></script>
 <script src="/static/js/toggleName.js"></script>
+
+{% endif %}
 </body>
 
 </html>
