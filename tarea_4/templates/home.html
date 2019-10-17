@@ -13,11 +13,8 @@
       <a href="{% url 'change_password' %}">cambiar contraseña</a><br>
       <form action="{% url 'upload_image' %}" method="post" enctype="multipart/form-data">
           {% csrf_token %}
-          <p>{{ form.non_field_errors }}</p>
-          <p>{{ form.imagefile.label_tag }} {{ form.imagefile.help_text }}</p>
-          <p>
-              {{ form.imagefile }}
-          </p>
+        
+        <input type="file" name="imagefile" accept="image/*" required="" id="id_imagefile">
           <p><input type="submit" value="Upload" /></p>
       </form>
       
