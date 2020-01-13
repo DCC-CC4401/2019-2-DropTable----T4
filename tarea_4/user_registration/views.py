@@ -38,7 +38,7 @@ def upload_image(request):
             usr = CustomUser.objects.get(email=request.user)
             usr.profile_image = request.FILES['imagefile']
             usr.save()
-            return redirect('home')
+            return redirect('user_profile')
     else:
         form = UploadFileForm()
-    return render(request, 'home.html', { 'form': form })
+    return render(request, 'LandingPage.html', { 'form': form })
