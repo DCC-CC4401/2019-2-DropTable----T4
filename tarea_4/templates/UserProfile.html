@@ -67,11 +67,11 @@
           {% csrf_token %}
 
         <input type="file" name="imagefile" accept="image/*" required="" id="id_imagefile">
-         
+
 
         <div class="row py-4">
             <div class="col text-center">
-                <p class="h4 text-center text-dark">Nombre de usuario</p>
+                <p class="h4 text-center text-dark">{{ user.first_name }} {{ user.last_name }}</p>
                 <button type="submit" class="btn btn-success" >Cambiar imagen</button>
             </div>
         </div>
