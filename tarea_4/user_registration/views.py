@@ -22,10 +22,10 @@ def change_password(request):
         if form.is_valid():
             user = form.save()
             update_session_auth_hash(request, user)  # Important!
-            messages.success(request, 'Your password was successfully updated!')
+            messages.success(request, 'Contraseña cambiada correctamente!')
             return redirect('password_success')
         else:
-            messages.error(request, 'Please correct the error below.')
+            messages.error(request, 'El formulario contiene errores')
     else:
         form = PasswordChangeForm(request.user)
     return render(request, 'change_password.html', { 'form': form })

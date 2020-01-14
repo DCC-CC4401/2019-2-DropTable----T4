@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b270df6-6fe2-407c-a60f-399792f024e8" name="Default Changelist" comment="Cambiar imagen dentro de la pestaña perfil">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarea_4/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarea_4/templates/LandingPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/LandingPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarea_4/templates/UserProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/UserProfile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarea_4/templates/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarea_4/templates/change_password_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/change_password_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarea_4/user_registration/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/user_registration/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,32 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tarea_4/templates/UserProfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tarea_4/templates/LandingPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tarea_4/user_registration/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="106">
+              <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -48,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tarea_4/tarea_4/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="31" column="113" lean-forward="true" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
+            <state relative-caret-position="527">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
               <folding>
                 <element signature="e#631#663#0" expanded="true" />
               </folding>
@@ -58,19 +38,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tarea_4/templates/change_password_success.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="71" column="15" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="71" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tarea_4/templates/change_password.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+            <state relative-caret-position="81">
+              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tarea_4/templates/change_password_success.html">
+        <entry file="file://$PROJECT_DIR$/tarea_4/user_registration/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+            <state relative-caret-position="102">
+              <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,7 +79,6 @@
       <find>seguridad</find>
       <find>contraseña</find>
       <find>cambiar</find>
-      <find>cerrar</find>
       <find>userprofile</find>
       <find>userprofi</find>
       <find>otra</find>
@@ -95,6 +86,9 @@
       <find>#</find>
       <find>user_profi</find>
       <find>otra cosa</find>
+      <find>cerrar ses</find>
+      <find>cerrar</find>
+      <find>cerrar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,13 +102,13 @@
         <option value="$PROJECT_DIR$/tarea_4/user_registration/models.py" />
         <option value="$PROJECT_DIR$/tarea_4/templates/base.html" />
         <option value="$PROJECT_DIR$/tarea_4/user_registration/forms.py" />
-        <option value="$PROJECT_DIR$/tarea_4/user_registration/views.py" />
         <option value="$PROJECT_DIR$/tarea_4/templates/change_password_succes.html" />
         <option value="$PROJECT_DIR$/tarea_4/tarea_4/urls.py" />
         <option value="$PROJECT_DIR$/tarea_4/templates/LandingPage.html" />
-        <option value="$PROJECT_DIR$/tarea_4/templates/change_password.html" />
-        <option value="$PROJECT_DIR$/tarea_4/templates/change_password_success.html" />
         <option value="$PROJECT_DIR$/tarea_4/templates/UserProfile.html" />
+        <option value="$PROJECT_DIR$/tarea_4/user_registration/views.py" />
+        <option value="$PROJECT_DIR$/tarea_4/templates/change_password_success.html" />
+        <option value="$PROJECT_DIR$/tarea_4/templates/change_password.html" />
       </list>
     </option>
   </component>
@@ -129,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,6 +164,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,7 +206,8 @@
       <workItem from="1576641124832" duration="2868000" />
       <workItem from="1577970756975" duration="11675000" />
       <workItem from="1578935770478" duration="1984000" />
-      <workItem from="1579003104837" duration="13049000" />
+      <workItem from="1579003104837" duration="13649000" />
+      <workItem from="1579021415748" duration="2392000" />
     </task>
     <task id="LOCAL-00001" summary="Agregado Formulario Cambio Contraseña">
       <created>1579013132309</created>
@@ -232,13 +227,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33045000" />
+    <option name="totallyTimeSpent" value="36037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2582996" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2582996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -335,16 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tarea_4/user_registration/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tarea_4/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -358,40 +343,6 @@
     <entry file="file://$PROJECT_DIR$/tarea_4/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tarea_4/tarea_4/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="31" column="113" lean-forward="true" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tarea_4/user_registration/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tarea_4/templates/change_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tarea_4/templates/change_password_success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tarea_4/templates/LandingPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -399,10 +350,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tarea_4/user_registration/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarea_4/tarea_4/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarea_4/user_registration/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tarea_4/templates/UserProfile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+        <state relative-caret-position="106">
+          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarea_4/templates/change_password_success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="71" column="15" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="71" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarea_4/templates/change_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
         </state>
       </provider>
     </entry>
