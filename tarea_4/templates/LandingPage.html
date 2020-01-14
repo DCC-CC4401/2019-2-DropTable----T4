@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    
+
 <!-- BOOTSTRAP JS, DO NOT DELETE -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -44,12 +44,13 @@
             <h1>LOGO</h1>
         </div>
         <div class="text-center py-3">
-            <img src="../media/{{user.profile_image}}" class="avatar px-2 py-2">
+	    <img src="../media/{{user.profile_image}}" class="avatar px-2 py-2">
+            <!-- <img src="/static/img/turing.jpg" class="avatar px-2 py-2"> -->
             <p class="h6">Bienvenido, <br> {{ user.first_name }}</p>
         </div>
         <ul class="list-unstyled components text-left">
             <li>
-                <a href="#">Inicio</a>
+                <a href="{% url 'landing_page' %}">Inicio</a>
             </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Perfil</a>
@@ -58,21 +59,20 @@
                         <a href="{% url 'user_profile' %}">Mi Perfil</a>
                     </li>
                     <li>
-                        <a href="#">Seguridad</a>
+                        <a href="{% url 'change_password' %}">Seguridad</a>
                     </li>
                     <li>
-                        <a href="#">Amigos</a>
+                        <a href="{% url 'user_profile' %}">Amigos</a>
                     </li>
                     <li>
-                        <a href="#">Mis Actividades</a>
+                        <a href="{% url 'user_profile' %}">Mis Actividades</a>
                     </li>
                 </ul>
             </li>
-
         </ul>
 
         <ul class="list-unstyled text-center py-4">
-            <button type="button" class="btn btn-danger">Cerrar Sesión</button>
+	    <a href="{% url 'logout' %}" class="btn btn-danger">Cerrar sesión</a>
         </ul>
     </nav>
     <!--EL RESTO-->
@@ -666,7 +666,15 @@
         </div>
     </div>
 </div>
-
+<!-- BOOTSTRAP JS, DO NOT DELETE -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/toggleName.js"></script>
 {% endif %}
 </body>
 
