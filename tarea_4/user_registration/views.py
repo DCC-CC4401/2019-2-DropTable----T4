@@ -38,6 +38,7 @@ def upload_image(request):
             usr = CustomUser.objects.get(email=request.user)
             usr.profile_image = request.FILES['imagefile']
             usr.save()
+            messages.success(request, 'Imágen cambiada correctamente!')
             return redirect('user_profile')
     else:
         form = UploadFileForm()
