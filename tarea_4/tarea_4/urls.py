@@ -29,6 +29,7 @@ urlpatterns = [
     path('/', include('user_registration.urls')),
     path('/', include('django.contrib.auth.urls')),
     url(r'^change-password/$', views.change_password, name='change_password'),
+    url(r'^pass-success/$', TemplateView.as_view(template_name='change_password_success.html'), name='password_success'),
 ]
 
 if settings.DEBUG:
