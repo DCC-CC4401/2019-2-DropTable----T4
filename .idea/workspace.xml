@@ -4,10 +4,7 @@
     <list default="true" id="4b270df6-6fe2-407c-a60f-399792f024e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarea_4/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarea_4/tarea_4/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/tarea_4/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarea_4/templates/UserProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/UserProfile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarea_4/templates/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/change_password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarea_4/user_registration/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/user_registration/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tarea_4/templates/UserProfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="154" column="78" selection-start-line="154" selection-end-line="155" />
+            <state relative-caret-position="112">
+              <caret line="65" column="6" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -134,8 +131,8 @@
       <find>chang</find>
       <find>seguridad</find>
       <find>contraseña</find>
-      <find>cambiar</find>
       <find>userprofile</find>
+      <find>cambiar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,10 +148,10 @@
         <option value="$PROJECT_DIR$/tarea_4/templates/LandingPage.html" />
         <option value="$PROJECT_DIR$/tarea_4/user_registration/forms.py" />
         <option value="$PROJECT_DIR$/tarea_4/templates/change_password.html" />
-        <option value="$PROJECT_DIR$/tarea_4/templates/UserProfile.html" />
         <option value="$PROJECT_DIR$/tarea_4/user_registration/views.py" />
         <option value="$PROJECT_DIR$/tarea_4/templates/change_password_succes.html" />
         <option value="$PROJECT_DIR$/tarea_4/tarea_4/urls.py" />
+        <option value="$PROJECT_DIR$/tarea_4/templates/UserProfile.html" />
       </list>
     </option>
   </component>
@@ -252,12 +249,20 @@
       <workItem from="1576641124832" duration="2868000" />
       <workItem from="1577970756975" duration="11675000" />
       <workItem from="1578935770478" duration="1984000" />
-      <workItem from="1579003104837" duration="9686000" />
+      <workItem from="1579003104837" duration="10944000" />
     </task>
+    <task id="LOCAL-00001" summary="Agregado Formulario Cambio Contraseña">
+      <created>1579013132309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579013132309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29682000" />
+    <option name="totallyTimeSpent" value="30940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -311,6 +316,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Agregado Formulario Cambio Contraseña" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregado Formulario Cambio Contraseña" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tarea_4/templates/signup.html">
@@ -421,8 +430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tarea_4/templates/UserProfile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="154" column="78" selection-start-line="154" selection-end-line="155" />
+        <state relative-caret-position="112">
+          <caret line="65" column="6" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
         </state>
       </provider>
     </entry>

@@ -63,19 +63,17 @@
             <img src="../media/{{user.profile_image}}" class="circular mx-auto d-block shadow" height="250px">
         </div>
 
-        <form action="{% url 'upload_image' %}" method="post" enctype="multipart/form-data">
-          {% csrf_token %}
 
-        <input type="file" name="imagefile" accept="image/*" required="" id="id_imagefile">
+
+
 
 
         <div class="row py-4">
             <div class="col text-center">
                 <p class="h4 text-center text-dark">{{ user.first_name }} {{ user.last_name }}</p>
-                <button type="submit" class="btn btn-success" >Cambiar imagen</button>
+
             </div>
         </div>
-            </form>
 
         <!--MENU CON TABS-->
 
@@ -110,7 +108,7 @@
 
                 <!--PESTAÑA MI PERFIL-->
                 <div class="tab-pane fade show active" id="Perfil" role="tabpanel" aria-labelledby="Perfil-tab">
-                    <form>
+                    <form action="{% url 'upload_image' %}" method="post" enctype="multipart/form-data">
                         <!--Nombre-->
                         <fieldset disabled>
                             <div class="form-group">
@@ -137,6 +135,26 @@
                                        placeholder={{ user.email }}>
                             </div>
                         </fieldset>
+                        <fieldset enabled>
+                            <div class="form-group">
+                                <label for="disabledTextInput">Cambiar Imagen:</label>
+                                </div>
+                        </fieldset>
+
+                                <form action="{% url 'upload_image' %}" method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+
+                                    <input type="file" name="imagefile" accept="image/*" required="" id="id_imagefile">
+
+
+                                    <div class="row py-4">
+                                        <div class="col text-center">
+                                            <button type="submit" class="btn btn-success" >Cambiar imagen</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+
 
                         <!--Fecha de nacimiento -->
                         <!-- <fieldset disabled> -->
