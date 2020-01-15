@@ -12,8 +12,9 @@
 
 {% block content %}
 
-<img src="../media/logo.png" class="avatar px-2 py-2">
+
             <h2>TimeSystem</h2>
+    <img src="../media/calendar.png" class="avatar px-2 py-2" align="middle">
     <p class="lead">Estos párrafos deben informar acerca del objetivo de
     negocio del sistema, además de describir qué datos se recolectan y
     cómo se analizan esos datos. <br>
@@ -24,8 +25,10 @@
     elementum diam. Praesent iaculis blandit tortor in
     volutpat. Duis ullamcorper laoreet commodo. Etiam viverra
     neque ut tellus dignissim, at semper tellus
-    sollicitudin. Etiam at enim nisl.>
+    sollicitudin. Etiam at enim nisl.
+
 </p>
+
     {% if user.is_authenticated %}
 <button type="button" class="btn btn-success" onclick="location.href='{% url 'landing_page' %}'">Ya Estas Logeado</button>
     {% else %}
