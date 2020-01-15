@@ -22,9 +22,10 @@ from django.views.generic.base import TemplateView
 from user_registration import views
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', TemplateView.as_view(template_name='registration/login.html'), name='home'),
     path('user_profile/', TemplateView.as_view(template_name='UserProfile.html'), name='user_profile'),
     path('landing_page/', TemplateView.as_view(template_name='LandingPage.html'), name='landing_page'),
+    path('signup/', TemplateView.as_view(template_name='signup.html'), name='signup'),
     path('admin/', admin.site.urls),
     path('/', include('user_registration.urls')),
     path('/', include('django.contrib.auth.urls')),

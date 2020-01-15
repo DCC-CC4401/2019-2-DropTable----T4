@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Página de Inicio</title>
+	<!-- BOOTSTRAP CSS, DO NOT DELETE -->
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+	
+	<style>
+	    .bd-placeholder-img { font-size: 1.125rem; text-anchor:
+							   middle;
+							   -webkit-user-select:
+							   none;
+							   -moz-user-select:
+							   none;
+							   -ms-user-select:
+							   none;
+							   user-select:
+							   none; }
+	    
+	    @media (min-width: 768px) { .bd-placeholder-img-lg {
+		font-size: 3.5rem; } }
+	</style>
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="/static/css/cover.css">
+    </head>
+    
+    <body class="text-center">
+	<div class="cover-container w-100 h-100 p-3 mx-auto flex-column">
+	    <header class="masthead mb-auto">
+		<div class="inner">
+		    <h3 class="masthead-brand">Nombre App</h3>
+			{% block activetab %}
+			{% endblock %}
+		</div>
+	    </header>
+
+	
+	    <main role="main" class="inner cover">
+		<br><br><br><br>
+		<h1 class="cover-heading">¡Optimiza tu tiempo!</h1>
+		{% block content %}
+		{% endblock %}
+	    </main>
+	</div>
+    </body>
+</html>
