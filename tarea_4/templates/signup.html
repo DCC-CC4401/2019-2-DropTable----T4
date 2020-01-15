@@ -3,7 +3,7 @@
 
 {% block activetab %}
 <nav class="nav nav-masthead justify-content-center">
-    <a class="nav-link" href="{% url 'login' %}">Inicio</a>
+    <a class="nav-link" href="{% url 'login' %}">Inicia Sesión </a>
     <a class="nav-link active" href="{% url 'signup'
 				     %}">Registrarse</a>
 </nav>
@@ -11,6 +11,12 @@
 
 
 {% block content %}
+
+<img src="../media/logo.png" class="avatar px-2 py-2">
+            <h2>TimeSystem</h2>
+    {% if user.is_authenticated %}
+<button type="button" class="btn btn-success" onclick="location.href='{% url 'landing_page' %}'">Ya Estas Logeado</button>
+    {% else %}
 <h2>Registrarse</h2>
 <form method="post" class="form-signin"> 
     {% csrf_token %}
@@ -25,5 +31,6 @@
     {% endfor %}
     
     <button type="submit" class="btn btn-success">Sign up</button>
-</form> 	
+</form>
+    {% endif %}
 {% endblock %}

@@ -2,13 +2,15 @@
 
 {% block activetab %}
 <nav class="nav nav-masthead justify-content-center">
-    <a class="nav-link active" href="{% url 'login' %}">Inicio</a>
+    <a class="nav-link active" href="{% url 'login' %}">Inicia Sesión</a>
     <a class="nav-link" href="{% url 'signup' %}">Registrarse</a>
 </nav>
 {% endblock %}
 
 
 {% block content %}
+    <img src="../media/logo.png" class="avatar px-2 py-2">
+            <h2>TimeSystem</h2>
 <p class="lead">Estos párrafos deben informar acerca del objetivo de
     negocio del sistema, además de describir qué datos se recolectan y
     cómo se analizan esos datos. <br>
@@ -21,20 +23,23 @@
     neque ut tellus dignissim, at semper tellus
     sollicitudin. Etiam at enim nisl.>
 </p>
-
+{% if user.is_authenticated %}
+    <button type="button" class="btn btn-success" onclick="location.href='{% url 'landing_page' %}'">Ya Estas Logeado</button>
+  {% else %}
 <h2>Iniciar sesión</h2>
-<form method="post" class="form-signin"> 
+<form method="post" class="form-signin">
     {% csrf_token %}
-    {% for field in form %} 
-    <div class="fieldWrapper"> 
+    {% for field in form %}
+    <div class="fieldWrapper">
 	{{ field.errors }}
 	{{ field.label_tag }} {{ field }}
-	{% if field.help_text %} 
+	{% if field.help_text %}
 	<p class="help">{{ field.help_text|safe }}</p>
 	{% endif %}
-    </div> 
+    </div>
     {% endfor %}
-    
+
     <button type="submit" class="btn btn-success">Login</button>
-</form> 	
+{% endif %}
+</form>
 {% endblock %}

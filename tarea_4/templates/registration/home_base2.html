@@ -1,0 +1,34 @@
+<!-- registration/home_base2.html -->
+{% extends 'home_base.html' %}
+
+{% block activetab %}
+<nav class="nav nav-masthead justify-content-center">
+    <a class="nav-link" href="{% url 'login' %}">Inicia Sesión </a>
+    <a class="nav-link active" href="{% url 'signup'
+				     %}">Registrarse</a>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+
+<img src="../media/logo.png" class="avatar px-2 py-2">
+            <h2>TimeSystem</h2>
+    <p class="lead">Estos párrafos deben informar acerca del objetivo de
+    negocio del sistema, además de describir qué datos se recolectan y
+    cómo se analizan esos datos. <br>
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+    iaculis et leo eu commodo. Sed vel sodales quam, at volutpat
+    urna. Mauris sit amet lacus commodo, laoreet ipsum eget,
+    elementum diam. Praesent iaculis blandit tortor in
+    volutpat. Duis ullamcorper laoreet commodo. Etiam viverra
+    neque ut tellus dignissim, at semper tellus
+    sollicitudin. Etiam at enim nisl.>
+</p>
+    {% if user.is_authenticated %}
+<button type="button" class="btn btn-success" onclick="location.href='{% url 'landing_page' %}'">Ya Estas Logeado</button>
+    {% else %}
+
+    {% endif %}
+{% endblock %}
