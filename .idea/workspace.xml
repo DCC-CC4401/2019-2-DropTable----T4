@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b270df6-6fe2-407c-a60f-399792f024e8" name="Default Changelist" comment="Cambiar imagen dentro de la pestaña perfil">
-      <change beforePath="$PROJECT_DIR$/tarea_4/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tarea_4/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarea_4/templates/registration/home_base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/tarea_4/templates/registration/home_base2.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tarea_4/tarea_4/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+            <state relative-caret-position="217">
+              <caret line="31" selection-start-line="31" selection-end-line="32" />
               <folding>
                 <element signature="e#631#663#0" expanded="true" />
               </folding>
@@ -43,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tarea_4/templates/registration/home_base2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="102">
+              <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -73,11 +72,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tarea_4/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="73" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+            <state relative-caret-position="51">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -94,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tarea_4/templates/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="323">
               <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="73" />
             </state>
           </provider>
@@ -131,9 +130,9 @@
       <find>imes</find>
       <find>logo</find>
       <find>time</find>
-      <find>inicio</find>
       <find>logout</find>
       <find>regist</find>
+      <find>inicio</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,10 +154,10 @@
         <option value="$PROJECT_DIR$/tarea_4/templates/home_base.html" />
         <option value="$PROJECT_DIR$/tarea_4/user_registration/urls.py" />
         <option value="$PROJECT_DIR$/tarea_4/tarea_4/urls.py" />
-        <option value="$PROJECT_DIR$/tarea_4/templates/registration/home_base2.html" />
         <option value="$PROJECT_DIR$/tarea_4/templates/registration/home_base.html" />
         <option value="$PROJECT_DIR$/tarea_4/templates/signup.html" />
         <option value="$PROJECT_DIR$/tarea_4/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/tarea_4/templates/registration/home_base2.html" />
       </list>
     </option>
   </component>
@@ -276,7 +275,7 @@
       <workItem from="1578935770478" duration="1984000" />
       <workItem from="1579003104837" duration="13649000" />
       <workItem from="1579021415748" duration="6498000" />
-      <workItem from="1579062815286" duration="6231000" />
+      <workItem from="1579062815286" duration="7140000" />
     </task>
     <task id="LOCAL-00001" summary="Agregado Formulario Cambio Contraseña">
       <created>1579013132309</created>
@@ -296,10 +295,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46374000" />
+    <option name="totallyTimeSpent" value="47283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2582996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -448,23 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tarea_4/tarea_4/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tarea_4/templates/registration/home_base2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tarea_4/templates/registration/home_base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -479,13 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tarea_4/templates/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/contrib/auth/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1904">
@@ -493,10 +469,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tarea_4/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarea_4/tarea_4/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="31" selection-start-line="31" selection-end-line="32" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tarea_4/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="73" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+        <state relative-caret-position="51">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarea_4/templates/registration/home_base2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
         </state>
       </provider>
     </entry>
