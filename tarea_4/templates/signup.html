@@ -17,6 +17,7 @@
     <img src="../media/calendar.png" class="avatar px-2 py-2">
     {% if user.is_authenticated %}
 <button type="button" class="btn btn-success" onclick="location.href='{% url 'landing_page' %}'">Ya Estas Logeado</button>
+    <a href="{% url 'logout' %}" class="btn btn-danger">Cerrar sesión</a>
     {% else %}
 <h2>Registrarse</h2>
 <form method="post" class="form-signin"> 

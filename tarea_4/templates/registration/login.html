@@ -26,7 +26,8 @@
 </p>
 {% if user.is_authenticated %}
     <button type="button" class="btn btn-success" onclick="location.href='{% url 'landing_page' %}'">Ya Estas Logeado</button>
-  {% else %}
+    <a href="{% url 'logout' %}" class="btn btn-danger">Cerrar sesión</a>
+{% else %}
 <h2>Iniciar sesión</h2>
 <form method="post" class="form-signin">
     {% csrf_token %}
