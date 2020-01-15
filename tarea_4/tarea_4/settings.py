@@ -124,8 +124,7 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'user_registration.CustomUser'
 
 # Redirect links
-LOGIN_REDIRECT_URL = 'user_profile'
-#LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'landing_page'
 LOGOUT_REDIRECT_URL = 'home'
 
 # Use images in models
