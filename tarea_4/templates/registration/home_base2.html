@@ -11,22 +11,23 @@
 
 {% block content %}
 
-
-            <h2>DropTable--</h2>
-    <img src="../media/calendar.png" class="avatar px-2 py-2" align="middle">
-    <p class="lead">Registra, organiza y optimiza el uso de tu tiempo.
-    Podrás monitorear tus actividades y comparalas con las de tus amigos.. <br>
+<img src="../media/logo.png" class="avatar px-2 py-2" align="middle">
+<h2>DropTable--</h2>
+<p class="lead">Registra, organiza y optimiza el uso de tu tiempo.
+    Podrás monitorear tus actividades y compararlas con las de tus
+    amigos ... <br>
     <img src="../media/calendar.png" class="avatar px-1 py-1"> <br>
-    <p class="lead"> Optimizar y organizar el uso de tu tiempo es la principal utilidad que tiene DropTable--,
-
-    realizando acciones como crear un horario con el tiempo estimado de tus actividades,
-    registrar tiempo real de las actividades realizadas y ver estadísticas de tus amigos.
-    Analizando los datos anteriores, podrás lograr un mayor control sobre el uso de tu tiempo.>
+<p class="lead"> Optimizar y organizar el uso de tu tiempo es la
+    principal utilidad que tiene DropTable--, realizando acciones como
+    crear un horario con el tiempo estimado de tus actividades,
+    registrar tiempo el real de las actividades realizadas y ver
+    estadísticas de tus amigos. Analizando los datos anteriores,
+    podrás lograr un mayor control sobre el uso de tu tiempo.
 </p>
 
-    {% if user.is_authenticated %}
+{% if user.is_authenticated %}
 <button type="button" class="btn btn-success" onclick="location.href='{% url 'landing_page' %}'">Ya Estas Logeado</button>
-    {% else %}
+{% else %}
 
-    {% endif %}
+{% endif %}
 {% endblock %}
